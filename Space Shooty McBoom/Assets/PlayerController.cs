@@ -1,58 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Cinemachine;
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] float controlSpeed = 10f;
+    [SerializeField] float xRange = 10f;
+    [SerializeField] float yRange = 7f;
 
-    public float forwardThrust = 25f, strafeThrust = 8f, hoverThrust = 3f ;
-    private float actForThrust, actStrafeThrust, actHoverThrust;
-    private float forwardAccel = 2.5f, strafeAccel = 1.75f, hoverAccel = 2f;
-    public float lookRate = 90f;
-    private Vector2 lookInput, screenCenter, mouseDist;
-    private float rollInput;
-    public float rollSpeed = 90f, rollAccel = 3.75f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //center
-        screenCenter.x = Screen.width * 0.5f;
-        screenCenter.y = Screen.height * 0.5f;
-        //lock cursor
-        //Cursor.lockState = CursorLockMode.Locked;
-        Cursor.lockState = CursorLockMode.Confined;
-    }
+    [SerializeField] float positionPitchFactor = -2f;
+    [SerializeField] float controlPitchFactor = -10f;
+    [SerializeField] float positionYawFactor = 2f;
+    [SerializeField] float controlRollFactor = -20f;
+    public CinemachineDollyCart cart;
+    float xThrow, yThrow;
 
-    // Update is called once per frame
     void Update()
     {
-        ShipControl();
+        ProcessTranslation();
+        ProcessRotation();
     }
 
-    private void ShipControl()
+    void ProcessRotation()
     {
-        lookInput.x = Input.mousePosition.x;
-        lookInput.y = Input.mousePosition.y;
+        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
+        float pitchDueToControlThrow = yThrow * controlPitchFactor;
 
-        mouseDist.x = (lookInput.x - screenCenter.x) / screenCenter.y;
-        mouseDist.y = (lookInput.y - screenCenter.y) / screenCenter.y;
+        float pitch = pitchDueToPosition + pitchDueToControlThrow;
+        float yaw = transform.localPosition.x * positionYawFactor;
+        float roll = xThrow * controlRollFactor;
 
-        mouseDist = Vector2.ClampMagnitude(mouseDist, 1f);
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
 
-        rollInput = Mathf.Lerp(rollInput, Input.GetAxisRaw("Roll"), rollAccel * Time.deltaTime);
+    void ProcessTranslation()
+    {
+        xThrow = Input.GetAxis("Horizontal");
+        yThrow = Input.GetAxis("Vertical");
 
-        transform.Rotate(
-                            -mouseDist.y * lookRate * Time.deltaTime,
-                            mouseDist.x*lookRate*Time.deltaTime,
-                            rollInput*rollSpeed*Time.deltaTime,
-                            Space.Self
-                        );
-        actForThrust = Mathf.Lerp(actForThrust,Input.GetAxisRaw("Vertical") * forwardThrust,forwardAccel*Time.deltaTime);
-        actStrafeThrust = Mathf.Lerp(actStrafeThrust,Input.GetAxisRaw("Horizontal") * strafeThrust,strafeAccel*Time.deltaTime);
-        actHoverThrust = Mathf.Lerp(actHoverThrust,Input.GetAxisRaw("Hover") * hoverThrust,hoverAccel*Time.deltaTime);
+        float xOffset = xThrow * Time.deltaTime * controlSpeed;
+        float rawXPos = transform.localPosition.x + xOffset;
+        float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
 
-        transform.position += transform.forward * actForThrust * Time.deltaTime;
-        transform.position += (transform.right * actStrafeThrust * Time.deltaTime) + (transform.up * actHoverThrust * Time.deltaTime);
+        float yOffset = yThrow * Time.deltaTime * controlSpeed;
+        float rawYPos = transform.localPosition.y + yOffset;
+        float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
+        transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
 }
+

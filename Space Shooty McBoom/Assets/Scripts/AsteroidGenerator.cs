@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Cinemachine;
 public class AsteroidGenerator : MonoBehaviour
 {
     public float spawnRange;
@@ -10,7 +10,8 @@ public class AsteroidGenerator : MonoBehaviour
     public GameObject asteroid;
     public float startSafeRange;
     private List<GameObject> objectsToPlace = new List<GameObject>();
-
+    public GameObject player;
+    public CinemachineSmoothPath track;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,12 +45,17 @@ public class AsteroidGenerator : MonoBehaviour
             Random.Range(-1f, 1f),
             Random.Range(-1f, 1f));
 
-        if(spawnPoint.magnitude > 1)
+     //   if(spawnPoint.magnitude > 1)
+     //   {
+     //       spawnPoint.Normalize();
+     //   }
+        if (spawnPoint == player.transform.position) { PickSpawnPoint(); return;}
+        for (int i = 0; i < track.m_Waypoints.Length; i++)
         {
-            spawnPoint.Normalize();
+            if (spawnPoint == track.m_Waypoints[i].position) { PickSpawnPoint();return;}
         }
-
         spawnPoint *= spawnRange;
+        
     }
 }
 
