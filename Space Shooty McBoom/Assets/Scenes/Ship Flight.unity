@@ -905,34 +905,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6105435953366660252}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1962483673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962483670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd366593c63265545859978ff4bfd9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controlSpeed: 40
-  xRange: 60
-  yRange: 15
-  positionPitchFactor: -1.25
-  controlPitchFactor: -10
-  positionYawFactor: 0.75
-  controlRollFactor: -45
-  cart: {fileID: 0}
-  xThrow: 0
-  yThrow: 0
-  rollDirection: 0
-  rollFactor: 0
-  maxRollFactor: 360
-  smoothTime: 3
-  minRollFactor: 0
-  barrelSmoothTime: 6
 --- !u!1 &2013929830
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,11 +961,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2013929832}
     m_Modifications:
-    - target: {fileID: 210295667664102146, guid: ccedefdcec1292941983b05cca337359,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
+      propertyPath: smoothTime
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5023682930134431593, guid: ccedefdcec1292941983b05cca337359,
+        type: 3}
+      propertyPath: moveWithCustomTransform
+      value: 
+      objectReference: {fileID: 552621104}
     - target: {fileID: 6105435952746611944, guid: ccedefdcec1292941983b05cca337359,
         type: 3}
       propertyPath: m_RootOrder
@@ -1049,25 +1025,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6105435952746611946, guid: ccedefdcec1292941983b05cca337359,
-        type: 3}
-      propertyPath: m_Drag
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 6105435952746611946, guid: ccedefdcec1292941983b05cca337359,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6105435952746611947, guid: ccedefdcec1292941983b05cca337359,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6105435952746611951, guid: ccedefdcec1292941983b05cca337359,
         type: 3}
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 9083587034719998773, guid: ccedefdcec1292941983b05cca337359,
+        type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083587034719998773, guid: ccedefdcec1292941983b05cca337359,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083587034719998773, guid: ccedefdcec1292941983b05cca337359,
+        type: 3}
+      propertyPath: moveWithCustomTransform
+      value: 
+      objectReference: {fileID: 552621104}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccedefdcec1292941983b05cca337359, type: 3}

@@ -4,6 +4,7 @@ using UnityEngine;
 using Cinemachine;
 public class PlayerController : MonoBehaviour
 {
+    [Header("Ship Controls")] 
     [SerializeField] float controlSpeed = 10f;
     [SerializeField] float xRange = 10f;
     [SerializeField] float yRange = 7f;
@@ -16,27 +17,27 @@ public class PlayerController : MonoBehaviour
     private bool isShipRolling = false;
   
     public CinemachineDollyCart cart;
-    [SerializeField] float xThrow, yThrow;
+    [Header("Roll Tuning")]
+    [SerializeField] float xThrow;
+    [SerializeField] float yThrow;
     [SerializeField] float rollDirection;
     [SerializeField] float rollFactor = 0f;
     [SerializeField] float maxRollFactor = 360f;
     [SerializeField] float smoothTime = 10f;
     [SerializeField] float minRollFactor = 0f;
-    [SerializeField] float barrelSmoothTime = 6f;
+
+    [Header("Weapons")]
+    public GameObject[] lasers;
+       // Change into slotting systems after tests... i.e laserDamage => slotOneDamage, missileDamage =>slotTwoDamage
+    [SerializeField] int laserDamage; 
+    [SerializeField] int missileDamage;
+
     void Update()
     {
+        RollCheck();
         ProcessTranslation();
         ProcessRotation();
-        if(Input.GetButtonDown("Fire1"))
-        {
-            isShipRolling = true;
-        }
-        if (Input.GetButtonUp("Fire1"))
-        {
-            rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime * Time.deltaTime);
-            isShipRolling = false;
-
-        }
+        ProcessFiring();
 
     }
 
@@ -85,5 +86,41 @@ public class PlayerController : MonoBehaviour
         Vector3 targetTranslation = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
         transform.localPosition = Vector3.Lerp(transform.localPosition, targetTranslation, 0.8f);
     }
+    void RollCheck()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            isShipRolling = true;
+        }
+        if (Input.GetButtonUp("Fire1"))
+        {
+            rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime * Time.deltaTime);
+            isShipRolling = false;
+        }
+    }
+
+    void ProcessFiring()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            Debug.Log("I'm shooting");
+            SetLasersActive(true);
+        }
+        else
+        {
+            Debug.Log("I'm not shooting");
+            SetLasersActive(false);
+        }
+    }
+    void SetLasersActive(bool isActive)
+    {
+        foreach (GameObject laser in lasers)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
+        }
+    }
 }
+
+
 
