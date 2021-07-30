@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Cinemachine;
 public class PlayerController : MonoBehaviour
 {
-    [Header("Ship Controls")] 
+    [Header("Ship Controls")]
+    private Playercontrols playerControls;
+    [SerializeField] InputAction move;
     [SerializeField] float controlSpeed = 10f;
     [SerializeField] float xRange = 10f;
     [SerializeField] float yRange = 7f;
@@ -15,7 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlRollFactor = -20f;
 
     private bool isShipRolling = false;
-  
+
     public CinemachineDollyCart cart;
     [Header("Roll Tuning")]
     [SerializeField] float xThrow;
@@ -31,14 +34,34 @@ public class PlayerController : MonoBehaviour
        // Change into slotting systems after tests... i.e laserDamage => slotOneDamage, missileDamage =>slotTwoDamage
     [SerializeField] int laserDamage; 
     [SerializeField] int missileDamage;
+    private void Awake()
+    {
+        playerControls = new Playercontrols();
+    }
+    private void OnEnable()
+    {
+        move = playerControls.Player.Move;
 
+        move.Enable();
+        playerControls.Player.Roll.performed += DoRoll;
+        playerControls.Player.Roll.Enable();
+        playerControls.Player.FireMains.performed += FireMains;
+        playerControls.Player.FireMains.Enable();
+
+    }
+    private void OnDisable()
+    {
+        move.Disable();
+        playerControls.Player.Roll.Disable();
+        playerControls.Player.FireMains.Disable();
+
+    }
     void Update()
     {
-        RollCheck();
+        
         ProcessTranslation();
         ProcessRotation();
-        ProcessFiring();
-
+        if (playerControls.Player.FireMains.ReadValue<float>() < 0.5f) { ShutDownMains(); }
     }
 
     void ProcessRotation()
@@ -57,7 +80,8 @@ public class PlayerController : MonoBehaviour
         }else
         if (isShipRolling)
         {
-            rollDirection = Input.GetAxis("Roll");
+
+            rollDirection = playerControls.Player.Move.ReadValue<Vector2>().x;
             rollFactor = Mathf.Lerp(rollFactor, maxRollFactor, smoothTime * Time.deltaTime);
             float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
             float pitchDueToControlThrow = yThrow * controlPitchFactor;
@@ -68,13 +92,14 @@ public class PlayerController : MonoBehaviour
             float roll = rollDirection * rollFactor;
             Quaternion targetRotation = Quaternion.Euler(pitch, yaw, roll);
             transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, 0.1f);
+            if (rollFactor >= 350f) { rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime * Time.deltaTime); isShipRolling = false; }
         }
     }
 
     void ProcessTranslation()
     {
-        xThrow = Input.GetAxis("Horizontal");
-        yThrow = Input.GetAxis("Vertical");
+        xThrow = playerControls.Player.Move.ReadValue<Vector2>().x;
+        yThrow = playerControls.Player.Move.ReadValue<Vector2>().y;
 
         float xOffset = xThrow * Time.deltaTime * controlSpeed;
         float rawXPos = transform.localPosition.x + xOffset;
@@ -86,31 +111,28 @@ public class PlayerController : MonoBehaviour
         Vector3 targetTranslation = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
         transform.localPosition = Vector3.Lerp(transform.localPosition, targetTranslation, 0.8f);
     }
-    void RollCheck()
+    private void DoRoll(InputAction.CallbackContext obj)
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            isShipRolling = true;
-        }
-        if (Input.GetButtonUp("Fire1"))
-        {
-            rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime * Time.deltaTime);
-            isShipRolling = false;
-        }
+        isShipRolling = true;
+       //if (Input.GetButtonDown("Fire1"))
+       //{
+       //    isShipRolling = true;
+       //}
+       //if (Input.GetButtonUp("Fire1"))
+       //{
+       //    rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime * Time.deltaTime);
+       //    isShipRolling = false;
+       //}
     }
 
-    void ProcessFiring()
+    void FireMains(InputAction.CallbackContext obj)
     {
-        if (Input.GetButton("Fire1"))
-        {
-            Debug.Log("I'm shooting");
-            SetLasersActive(true);
-        }
-        else
-        {
-            Debug.Log("I'm not shooting");
-            SetLasersActive(false);
-        }
+        SetLasersActive(true);
+       
+    }
+    void ShutDownMains()
+    {
+        SetLasersActive(false);
     }
     void SetLasersActive(bool isActive)
     {
