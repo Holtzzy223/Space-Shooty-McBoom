@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
         playerControls.Player.FireMains.Disable();
 
     }
-    void Update()
+    void LateUpdate()
     {
         
         ProcessTranslation();
