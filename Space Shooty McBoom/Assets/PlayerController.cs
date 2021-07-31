@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlRollFactor = -20f;
 
     private bool isShipRolling = false;
+    public bool isShipStrafing = false;
 
     public CinemachineDollyCart cart;
     [Header("Roll Tuning")]
@@ -44,6 +45,8 @@ public class PlayerController : MonoBehaviour
         move = playerControls.Player.Move;
 
         move.Enable();
+        playerControls.Player.Strafe.performed += DoStrafe;
+        playerControls.Player.Strafe.Enable();
         playerControls.Player.Roll.performed += DoRoll;
         playerControls.Player.Roll.Enable();
         playerControls.Player.FireMains.performed += FireMains;
@@ -53,6 +56,7 @@ public class PlayerController : MonoBehaviour
     private void OnDisable()
     {
         move.Disable();
+        playerControls.Player.Strafe.Disable();
         playerControls.Player.Roll.Disable();
         playerControls.Player.FireMains.Disable();
 
@@ -62,6 +66,7 @@ public class PlayerController : MonoBehaviour
         
         ProcessTranslation();
         ProcessRotation();
+        if (playerControls.Player.Strafe.ReadValue<float>() <= 0) { isShipStrafing = false; }
         if (playerControls.Player.FireMains.ReadValue<float>() < 0.5f) { ShutDownMains(); }
     }
 
@@ -90,7 +95,7 @@ public class PlayerController : MonoBehaviour
 
             float yaw = transform.localPosition.x * positionYawFactor;
 
-            float roll = rollDirection * rollFactor;
+            float roll =  rollFactor;//rollDirection *
             Quaternion targetRotation = Quaternion.Euler(pitch, yaw, roll);
             transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, 0.1f);
             if (rollFactor <= (maxRollFactor+1)) { rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime*Time.deltaTime); isShipRolling = false; }
@@ -104,7 +109,7 @@ public class PlayerController : MonoBehaviour
 
         float xOffset = xThrow * Time.deltaTime * controlSpeed;
         float rawXPos = transform.localPosition.x + xOffset;
-        if (isShipRolling) { rawXPos = transform.localPosition.x + xOffset*strafePower; }
+        if (isShipStrafing) {rawXPos = transform.localPosition.x + xOffset*strafePower; }
         float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
 
         float yOffset = yThrow * Time.deltaTime * controlSpeed;
@@ -112,6 +117,7 @@ public class PlayerController : MonoBehaviour
         float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
         Vector3 targetTranslation = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
         transform.localPosition = Vector3.Lerp(transform.localPosition, targetTranslation, 0.8f);
+       
     }
     private void DoRoll(InputAction.CallbackContext obj)
     {
@@ -125,6 +131,11 @@ public class PlayerController : MonoBehaviour
        //    rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime * Time.deltaTime);
        //    isShipRolling = false;
        //}
+    }
+    private void DoStrafe(InputAction.CallbackContext obj)
+    {
+        isShipStrafing = true;
+
     }
 
     void FireMains(InputAction.CallbackContext obj)
