@@ -721,7 +721,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 338020eb18e405347ae71eb8858b01be, type: 2}
+      objectReference: {fileID: 2100000, guid: 1ab381bf84927e4449d1fcd00b922340, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 957f74c9cb5152142a8ce163f28710ca, type: 3}
 --- !u!1 &963194225
@@ -1127,7 +1127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
       propertyPath: smoothTime
-      value: 2
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
       propertyPath: strafePower

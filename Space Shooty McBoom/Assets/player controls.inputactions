@@ -22,6 +22,14 @@
                     "interactions": ""
                 },
                 {
+                    "name": "Roll",
+                    "type": "Button",
+                    "id": "c7f950c8-0b1e-48eb-8aed-d152d4232a8e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "FireMains",
                     "type": "Button",
                     "id": "bf55f436-90f7-41ae-b6c4-2c438b376a11",
@@ -30,9 +38,17 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Roll",
+                    "name": "FireSecondary",
                     "type": "Button",
-                    "id": "c7f950c8-0b1e-48eb-8aed-d152d4232a8e",
+                    "id": "d6de722c-4650-4c46-ab48-5e210fbb9609",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "FireUlt",
+                    "type": "Button",
+                    "id": "8d44fe71-d7cd-4f67-9382-e83ab14ae25e",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -201,6 +217,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "FireMains",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "78396c97-7ec7-427e-914c-703346f3547d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireSecondary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f100b061-9f77-4175-8057-10568ac91e8e",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireUlt",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
