@@ -51,22 +51,6 @@ public class @Playercontrols : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""FireSecondary"",
-                    ""type"": ""Button"",
-                    ""id"": ""d6de722c-4650-4c46-ab48-5e210fbb9609"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""FireUlt"",
-                    ""type"": ""Button"",
-                    ""id"": ""8d44fe71-d7cd-4f67-9382-e83ab14ae25e"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Hold""
-                },
-                {
                     ""name"": ""Boost"",
                     ""type"": ""Button"",
                     ""id"": ""a9fcc552-ac3b-46c5-905b-1a28aaef89a7"",
@@ -243,42 +227,9 @@ public class @Playercontrols : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""78396c97-7ec7-427e-914c-703346f3547d"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""FireSecondary"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f100b061-9f77-4175-8057-10568ac91e8e"",
-                    ""path"": ""<Gamepad>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""FireUlt"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8bf896d6-6186-4e73-96d9-ef771158c00f"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
-                    ""interactions"": ""Hold"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""FireUlt"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""22fecf26-58de-40aa-9b45-16a594898499"",
                     ""path"": ""<Gamepad>/leftShoulder"",
-                    ""interactions"": ""MultiTap"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Roll"",
@@ -329,8 +280,6 @@ public class @Playercontrols : IInputActionCollection, IDisposable
         m_Player_Strafe = m_Player.FindAction("Strafe", throwIfNotFound: true);
         m_Player_Roll = m_Player.FindAction("Roll", throwIfNotFound: true);
         m_Player_FireMains = m_Player.FindAction("FireMains", throwIfNotFound: true);
-        m_Player_FireSecondary = m_Player.FindAction("FireSecondary", throwIfNotFound: true);
-        m_Player_FireUlt = m_Player.FindAction("FireUlt", throwIfNotFound: true);
         m_Player_Boost = m_Player.FindAction("Boost", throwIfNotFound: true);
     }
 
@@ -385,8 +334,6 @@ public class @Playercontrols : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Strafe;
     private readonly InputAction m_Player_Roll;
     private readonly InputAction m_Player_FireMains;
-    private readonly InputAction m_Player_FireSecondary;
-    private readonly InputAction m_Player_FireUlt;
     private readonly InputAction m_Player_Boost;
     public struct PlayerActions
     {
@@ -396,8 +343,6 @@ public class @Playercontrols : IInputActionCollection, IDisposable
         public InputAction @Strafe => m_Wrapper.m_Player_Strafe;
         public InputAction @Roll => m_Wrapper.m_Player_Roll;
         public InputAction @FireMains => m_Wrapper.m_Player_FireMains;
-        public InputAction @FireSecondary => m_Wrapper.m_Player_FireSecondary;
-        public InputAction @FireUlt => m_Wrapper.m_Player_FireUlt;
         public InputAction @Boost => m_Wrapper.m_Player_Boost;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
@@ -420,12 +365,6 @@ public class @Playercontrols : IInputActionCollection, IDisposable
                 @FireMains.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFireMains;
                 @FireMains.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFireMains;
                 @FireMains.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFireMains;
-                @FireSecondary.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFireSecondary;
-                @FireSecondary.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFireSecondary;
-                @FireSecondary.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFireSecondary;
-                @FireUlt.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFireUlt;
-                @FireUlt.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFireUlt;
-                @FireUlt.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFireUlt;
                 @Boost.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBoost;
                 @Boost.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBoost;
                 @Boost.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBoost;
@@ -445,12 +384,6 @@ public class @Playercontrols : IInputActionCollection, IDisposable
                 @FireMains.started += instance.OnFireMains;
                 @FireMains.performed += instance.OnFireMains;
                 @FireMains.canceled += instance.OnFireMains;
-                @FireSecondary.started += instance.OnFireSecondary;
-                @FireSecondary.performed += instance.OnFireSecondary;
-                @FireSecondary.canceled += instance.OnFireSecondary;
-                @FireUlt.started += instance.OnFireUlt;
-                @FireUlt.performed += instance.OnFireUlt;
-                @FireUlt.canceled += instance.OnFireUlt;
                 @Boost.started += instance.OnBoost;
                 @Boost.performed += instance.OnBoost;
                 @Boost.canceled += instance.OnBoost;
@@ -464,8 +397,6 @@ public class @Playercontrols : IInputActionCollection, IDisposable
         void OnStrafe(InputAction.CallbackContext context);
         void OnRoll(InputAction.CallbackContext context);
         void OnFireMains(InputAction.CallbackContext context);
-        void OnFireSecondary(InputAction.CallbackContext context);
-        void OnFireUlt(InputAction.CallbackContext context);
         void OnBoost(InputAction.CallbackContext context);
     }
 }
