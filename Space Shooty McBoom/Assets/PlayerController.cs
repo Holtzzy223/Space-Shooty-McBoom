@@ -11,15 +11,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlSpeed = 10f;
     [SerializeField] float xRange = 10f;
     [SerializeField] float yRange = 7f;
-
+    [SerializeField] float maxZRange = 3f;
+    [SerializeField] float zRange = 0f;
+    [SerializeField] float storedZPosition = 0f;
     [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float controlPitchFactor = -10f;
     [SerializeField] float strafePower = -10f;
+    [SerializeField] float boostPower = 3f;
     [SerializeField] float positionYawFactor = 2f;
     [SerializeField] float controlRollFactor = -20f;
 
-    private bool isShipRolling = false;
+    public bool isShipRolling = false;
     public bool isShipStrafing = false;
+    public bool isShipBoosting = false;
 
     public CinemachineDollyCart cart;
     [Header("Roll Tuning")]
@@ -33,6 +37,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Weapons")]
     public GameObject[] lasers;
+    public GameObject[] missiles;
        // Change into slotting systems after tests... i.e laserDamage => slotOneDamage, missileDamage =>slotTwoDamage
     [SerializeField] int laserDamage; 
     [SerializeField] int missileDamage;
@@ -49,6 +54,8 @@ public class PlayerController : MonoBehaviour
         playerControls.Player.Strafe.Enable();
         playerControls.Player.Roll.performed += DoRoll;
         playerControls.Player.Roll.Enable();
+        playerControls.Player.Boost.performed += DoBoost;
+        playerControls.Player.Boost.Enable();
         playerControls.Player.FireMains.performed += FireMains;
         playerControls.Player.FireMains.Enable();
 
@@ -58,6 +65,7 @@ public class PlayerController : MonoBehaviour
         move.Disable();
         playerControls.Player.Strafe.Disable();
         playerControls.Player.Roll.Disable();
+        playerControls.Player.Boost.Disable();
         playerControls.Player.FireMains.Disable();
 
     }
@@ -67,6 +75,7 @@ public class PlayerController : MonoBehaviour
         ProcessTranslation();
         ProcessRotation();
         if (playerControls.Player.Strafe.ReadValue<float>() <= 0) { isShipStrafing = false; }
+        if (playerControls.Player.Boost.ReadValue<float>() < 0.5f) { isShipBoosting = false; }
         if (playerControls.Player.FireMains.ReadValue<float>() < 0.5f) { ShutDownMains(); }
     }
 
@@ -115,33 +124,36 @@ public class PlayerController : MonoBehaviour
         float yOffset = yThrow * Time.deltaTime * controlSpeed;
         float rawYPos = transform.localPosition.y + yOffset;
         float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
+        
         Vector3 targetTranslation = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+        if (isShipBoosting)
+        {
+            storedZPosition = transform.localPosition.z;
+            float zOffset = boostPower;
+            float rawZPos = transform.localPosition.z + zOffset;
+            float clampedZPos = Mathf.Clamp(rawZPos, -zRange, zRange);
+            targetTranslation = new Vector3(clampedXPos, clampedYPos, clampedZPos);
+            zRange = Mathf.Lerp(zRange,maxZRange,0.1f);
+        }
         transform.localPosition = Vector3.Lerp(transform.localPosition, targetTranslation, 0.8f);
-       
+        if (!isShipBoosting) { targetTranslation = new Vector3(clampedXPos, clampedYPos,storedZPosition -storedZPosition ); transform.localPosition = Vector3.Lerp(transform.localPosition, targetTranslation, 0.2f); }
     }
     private void DoRoll(InputAction.CallbackContext obj)
     {
         isShipRolling = true;
-       //if (Input.GetButtonDown("Fire1"))
-       //{
-       //    isShipRolling = true;
-       //}
-       //if (Input.GetButtonUp("Fire1"))
-       //{
-       //    rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime * Time.deltaTime);
-       //    isShipRolling = false;
-       //}
     }
     private void DoStrafe(InputAction.CallbackContext obj)
     {
         isShipStrafing = true;
-
     }
 
+    private void DoBoost(InputAction.CallbackContext obj)
+    {
+        isShipBoosting = true;
+    }
     void FireMains(InputAction.CallbackContext obj)
     {
         SetLasersActive(true);
-       
     }
     void ShutDownMains()
     {
@@ -152,6 +164,15 @@ public class PlayerController : MonoBehaviour
         foreach (GameObject laser in lasers)
         {
             var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
+        }
+    }
+
+    void SetMissilessActive(bool isActive)
+    {
+        foreach (GameObject missile in missiles)
+        {
+            var emissionModule = missile.GetComponent<ParticleSystem>().emission;
             emissionModule.enabled = isActive;
         }
     }

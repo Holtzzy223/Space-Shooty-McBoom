@@ -51,6 +51,14 @@
                     "id": "8d44fe71-d7cd-4f67-9382-e83ab14ae25e",
                     "expectedControlType": "Button",
                     "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "Boost",
+                    "type": "Button",
+                    "id": "a9fcc552-ac3b-46c5-905b-1a28aaef89a7",
+                    "expectedControlType": "Button",
+                    "processors": "",
                     "interactions": ""
                 }
             ],
@@ -223,7 +231,7 @@
                 {
                     "name": "",
                     "id": "78396c97-7ec7-427e-914c-703346f3547d",
-                    "path": "",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -234,8 +242,19 @@
                 {
                     "name": "",
                     "id": "f100b061-9f77-4175-8057-10568ac91e8e",
-                    "path": "",
+                    "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireUlt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8bf896d6-6186-4e73-96d9-ef771158c00f",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "Hold",
                     "processors": "",
                     "groups": "",
                     "action": "FireUlt",
@@ -246,10 +265,43 @@
                     "name": "",
                     "id": "22fecf26-58de-40aa-9b45-16a594898499",
                     "path": "<Gamepad>/leftShoulder",
-                    "interactions": "MultiTap(tapDelay=0.3)",
+                    "interactions": "MultiTap",
                     "processors": "",
                     "groups": "",
                     "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e6cc871-8a73-44c2-9178-6c6d4efff4f9",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7a242bb0-9d55-42cb-8e81-7fe01c815e33",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Boost",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a8bd4c5c-2874-4d53-8185-965dd695469f",
+                    "path": "<Keyboard>/alt",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Boost",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
