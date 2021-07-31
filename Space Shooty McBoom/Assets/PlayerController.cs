@@ -58,7 +58,8 @@ public class PlayerController : MonoBehaviour
         playerControls.Player.Boost.Enable();
         playerControls.Player.FireMains.performed += FireMains;
         playerControls.Player.FireMains.Enable();
-
+        playerControls.Player.FireSecondary.performed += FireSecondary;
+        playerControls.Player.FireSecondary.Enable();
     }
     private void OnDisable()
     {
@@ -67,6 +68,7 @@ public class PlayerController : MonoBehaviour
         playerControls.Player.Roll.Disable();
         playerControls.Player.Boost.Disable();
         playerControls.Player.FireMains.Disable();
+        playerControls.Player.FireSecondary.Disable();
 
     }
     void LateUpdate()
@@ -77,6 +79,7 @@ public class PlayerController : MonoBehaviour
         if (playerControls.Player.Strafe.ReadValue<float>() <= 0) { isShipStrafing = false; }
         if (playerControls.Player.Boost.ReadValue<float>() < 0.5f) { isShipBoosting = false; }
         if (playerControls.Player.FireMains.ReadValue<float>() < 0.5f) { ShutDownMains(); }
+        if (playerControls.Player.FireSecondary.ReadValue<float>() ==0f) { ShutDownSecondary(); }
     }
 
     void ProcessRotation()
@@ -159,6 +162,14 @@ public class PlayerController : MonoBehaviour
     {
         SetLasersActive(false);
     }
+    void FireSecondary(InputAction.CallbackContext obj)
+    {
+        SetMissilesActive(true);
+    }
+    void ShutDownSecondary()
+    {
+        SetMissilesActive(false);
+    }
     void SetLasersActive(bool isActive)
     {
         foreach (GameObject laser in lasers)
@@ -168,7 +179,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void SetMissilessActive(bool isActive)
+    void SetMissilesActive(bool isActive)
     {
         foreach (GameObject missile in missiles)
         {
