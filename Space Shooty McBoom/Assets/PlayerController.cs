@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float controlPitchFactor = -10f;
+    [SerializeField] float strafePower = -10f;
     [SerializeField] float positionYawFactor = 2f;
     [SerializeField] float controlRollFactor = -20f;
 
@@ -25,7 +26,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float yThrow;
     [SerializeField] float rollDirection;
     [SerializeField] float rollFactor = 0f;
-    [SerializeField] float maxRollFactor = 360f;
+    [SerializeField] float maxRollFactor = -360f;
     [SerializeField] float smoothTime = 10f;
     [SerializeField] float minRollFactor = 0f;
 
@@ -82,7 +83,7 @@ public class PlayerController : MonoBehaviour
         {
 
             rollDirection = playerControls.Player.Move.ReadValue<Vector2>().x;
-            rollFactor = Mathf.Lerp(rollFactor, maxRollFactor, smoothTime * Time.deltaTime);
+            rollFactor = Mathf.Lerp(rollFactor, maxRollFactor, smoothTime*Time.deltaTime);
             float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
             float pitchDueToControlThrow = yThrow * controlPitchFactor;
             float pitch = pitchDueToPosition + pitchDueToControlThrow;
@@ -92,7 +93,7 @@ public class PlayerController : MonoBehaviour
             float roll = rollDirection * rollFactor;
             Quaternion targetRotation = Quaternion.Euler(pitch, yaw, roll);
             transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, 0.1f);
-            if (rollFactor >= 350f) { rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime * Time.deltaTime); isShipRolling = false; }
+            if (rollFactor <= (maxRollFactor+1)) { rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime*Time.deltaTime); isShipRolling = false; }
         }
     }
 
@@ -103,6 +104,7 @@ public class PlayerController : MonoBehaviour
 
         float xOffset = xThrow * Time.deltaTime * controlSpeed;
         float rawXPos = transform.localPosition.x + xOffset;
+        if (isShipRolling) { rawXPos = transform.localPosition.x + xOffset*strafePower; }
         float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
 
         float yOffset = yThrow * Time.deltaTime * controlSpeed;

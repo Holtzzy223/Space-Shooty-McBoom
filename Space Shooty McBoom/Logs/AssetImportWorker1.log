@@ -1,0 +1,910 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 18363.1679; Version 1909; 64bit' Language: 'en' Physical Memory: 24467 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/Hetsko/Documents/GitHub/Space-Shooty-McBoom/Space Shooty McBoom
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+54004
+Successfully changed project path to: C:/Users/Hetsko/Documents/GitHub/Space-Shooty-McBoom/Space Shooty McBoom
+C:/Users/Hetsko/Documents/GitHub/Space-Shooty-McBoom/Space Shooty McBoom
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 50.99 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.6f1 (338bb68529b2)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Hetsko/Documents/GitHub/Space-Shooty-McBoom/Space Shooty McBoom/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.003288 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 38.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.853 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001948 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 42.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.358 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.3 MB.
+System memory in use after: 154.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2124.
+Total: 2.108000 ms (FindLiveObjects: 0.229000 ms CreateObjectMapping: 0.069300 ms MarkObjects: 1.724400 ms  DeleteObjects: 0.084200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/FaceCamera.cs
+  artifactKey: Guid(686eb2843922f3d4f8ac8c9bc6ccb255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FaceCamera.cs using Guid(686eb2843922f3d4f8ac8c9bc6ccb255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6939389d45c508e9e4ed2bf40c346db4') in 0.053979 seconds
+  Import took 0.058046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.744350 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd471789e6f063452e287e001e9ad61e') in 0.183892 seconds
+  Import took 0.188410 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001200 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.253 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.8 MB.
+System memory in use after: 154.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2135.
+Total: 3.193300 ms (FindLiveObjects: 0.272700 ms CreateObjectMapping: 0.090900 ms MarkObjects: 2.781400 ms  DeleteObjects: 0.047000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.225484 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877a624dafca46d3a512dfea3f133618') in 0.098489 seconds
+  Import took 0.102366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.172752 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0832d24a5a716b62e6c71afe663dbc8') in 0.032978 seconds
+  Import took 0.038396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.011038 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ceb2a315bec1a1bf1a9d04ef277b24f') in 0.038379 seconds
+  Import took 0.044864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.618313 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c5e7d7001e59dcb6feb05015fa9f033') in 0.025957 seconds
+  Import took 0.030117 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001060 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.119 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.8 MB.
+System memory in use after: 154.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2139.
+Total: 2.431900 ms (FindLiveObjects: 0.239900 ms CreateObjectMapping: 0.077600 ms MarkObjects: 2.094200 ms  DeleteObjects: 0.018500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.950828 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a735a0ef55ea976271c5836b034eb906') in 0.084595 seconds
+  Import took 0.088736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.479540 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782dc0fee8e99c99432fa8c83b680a6b') in 0.064085 seconds
+  Import took 0.070458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.577372 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f6ca61fa0ddd5a2518972c11b0cae2') in 0.018733 seconds
+  Import took 0.023097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.256937 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02dbe7132bf471ac86cd3ae9ec96473f') in 0.039216 seconds
+  Import took 0.043502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.187347 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a3a31374bc77eaaa09a18bf2c364167') in 0.039986 seconds
+  Import took 0.044102 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001383 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.066 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.8 MB.
+System memory in use after: 155.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2143.
+Total: 5.100800 ms (FindLiveObjects: 0.483900 ms CreateObjectMapping: 0.196000 ms MarkObjects: 4.382900 ms  DeleteObjects: 0.036200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.830632 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0261785fefdaee80108d445dae9014') in 0.112191 seconds
+  Import took 0.116734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.409577 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c5c6e5b56122c59cd901a09d383fbcb') in 0.029932 seconds
+  Import took 0.034261 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001715 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.192 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.9 MB.
+System memory in use after: 155.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2147.
+Total: 2.173500 ms (FindLiveObjects: 0.188200 ms CreateObjectMapping: 0.066800 ms MarkObjects: 1.897300 ms  DeleteObjects: 0.019300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.578949 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4051a625a9dac7c8d8070b9dd91b0fd6') in 0.086632 seconds
+  Import took 0.089892 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001016 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.219 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.9 MB.
+System memory in use after: 155.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2151.
+Total: 2.604400 ms (FindLiveObjects: 0.192900 ms CreateObjectMapping: 0.089400 ms MarkObjects: 2.285800 ms  DeleteObjects: 0.034900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.323337 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b24eea7e36dd56441f89a9c03e515b5') in 0.083592 seconds
+  Import took 0.087170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.019381 seconds.
+  path: Assets/reticle.png
+  artifactKey: Guid(dac3677dbbd7a6e489027dd28c57f4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/reticle.png using Guid(dac3677dbbd7a6e489027dd28c57f4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799958fb647ba0a0d5d365b19b45e267') in 0.106372 seconds
+  Import took 0.110022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.853122 seconds.
+  path: Assets/reticle.png
+  artifactKey: Guid(dac3677dbbd7a6e489027dd28c57f4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/reticle.png using Guid(dac3677dbbd7a6e489027dd28c57f4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc91736ac4dd2295d682b33f1ecdd363') in 0.028472 seconds
+  Import took 0.032152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.364378 seconds.
+  path: Assets/reticle.png
+  artifactKey: Guid(dac3677dbbd7a6e489027dd28c57f4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/reticle.png using Guid(dac3677dbbd7a6e489027dd28c57f4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1490410d022fcdb72f4711a34bb62298') in 0.037613 seconds
+  Import took 0.041028 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001321 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.282 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.9 MB.
+System memory in use after: 155.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2157.
+Total: 2.338700 ms (FindLiveObjects: 0.178200 ms CreateObjectMapping: 0.062900 ms MarkObjects: 2.077900 ms  DeleteObjects: 0.018100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.270925 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f51e83587686270e23268a606ee1b3f') in 0.092052 seconds
+  Import took 0.095674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.557829 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb021e43502d9b1fb31b1cfa44a6d532') in 0.027847 seconds
+  Import took 0.032628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.318669 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70915039e24f1b796a8a55ecd796271') in 0.023316 seconds
+  Import took 0.027763 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000916 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.184 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.9 MB.
+System memory in use after: 155.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2161.
+Total: 2.198600 ms (FindLiveObjects: 0.222400 ms CreateObjectMapping: 0.070700 ms MarkObjects: 1.872200 ms  DeleteObjects: 0.032200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.409024 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9740e0acfa034ee5a60e3317cfe4aa6c') in 0.102973 seconds
+  Import took 0.109252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.179246 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16596f2b797a47dc19b9737cdc45603c') in 0.043981 seconds
+  Import took 0.049072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.958760 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70894d2e21656bd2a239007f8e5b16c7') in 0.038564 seconds
+  Import took 0.043982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.114662 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '476bafe4c8e9d00cc718b77d4656d913') in 0.037837 seconds
+  Import took 0.042799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.688643 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceed10dff85fa50c4be6b054d78afaa6') in 0.050035 seconds
+  Import took 0.055190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.255473 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91780380f3ce2799451453220ab9c27') in 0.050814 seconds
+  Import took 0.055589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.284568 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '009d02c7fa116c5319b0823e3ca034a6') in 0.029268 seconds
+  Import took 0.034142 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001177 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.108 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.0 MB.
+System memory in use after: 155.1 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2165.
+Total: 2.229300 ms (FindLiveObjects: 0.179300 ms CreateObjectMapping: 0.060900 ms MarkObjects: 1.957500 ms  DeleteObjects: 0.030100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.222797 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4587d7f9366c6c776d0ed29ebb404ae2') in 0.093698 seconds
+  Import took 0.097994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.665985 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957b1046890789273f47297ae2e9167b') in 0.029946 seconds
+  Import took 0.034109 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001148 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.041 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.0 MB.
+System memory in use after: 155.1 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2169.
+Total: 3.001400 ms (FindLiveObjects: 0.198900 ms CreateObjectMapping: 0.068600 ms MarkObjects: 2.712100 ms  DeleteObjects: 0.019700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.952681 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6fa3ce9ac2bf5d15badd177ad40f11') in 0.084619 seconds
+  Import took 0.088056 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000942 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.059 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.0 MB.
+System memory in use after: 155.1 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2173.
+Total: 3.678900 ms (FindLiveObjects: 0.539300 ms CreateObjectMapping: 0.179900 ms MarkObjects: 2.938500 ms  DeleteObjects: 0.019500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.000038 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b31ca8a6595cd007bce871019b58d8') in 0.114493 seconds
+  Import took 0.118666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.263678 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e357305715416f71fb2573efebf23173') in 0.041890 seconds
+  Import took 0.050082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.997240 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573b5e02a7170131ad2c234ef5f1b600') in 0.028458 seconds
+  Import took 0.034205 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001043 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.200 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.0 MB.
+System memory in use after: 155.1 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2177.
+Total: 2.481300 ms (FindLiveObjects: 0.228800 ms CreateObjectMapping: 0.066300 ms MarkObjects: 2.138400 ms  DeleteObjects: 0.046500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.013756 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c4dc3a97b3cc6b90b40f3946dbd4be') in 0.085033 seconds
+  Import took 0.088593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.304067 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29f0f33ce10a0220063d3f5c3aa6d3b') in 0.039588 seconds
+  Import took 0.044591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.764520 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '560f80204a220d4d1b4cad3599256696') in 0.035059 seconds
+  Import took 0.039662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.006255 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e5359b472ecbffa1161fd0c09080255') in 0.066240 seconds
+  Import took 0.070696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.367187 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45c4f7e22681c0b9c62d15fcc0670bd') in 0.049211 seconds
+  Import took 0.053574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.393531 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed799a2d08916ea90111ea0214d870e1') in 0.021371 seconds
+  Import took 0.025562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.254885 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62446428cd259e1226711e8b2813fb19') in 0.019188 seconds
+  Import took 0.023408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.401772 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb2cc8d1b39dadc180ef8d8980c1e3f') in 0.019243 seconds
+  Import took 0.023330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.290353 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b264c7e7614dc86b90ca88f5d3e5322') in 0.040952 seconds
+  Import took 0.045433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.011174 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defe81612c5e8f3394679f8a76688009') in 0.131019 seconds
+  Import took 0.135969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.584398 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3783d9f82b4e27bf21a2d1e442115679') in 0.030224 seconds
+  Import took 0.037416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.985850 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cff84f2aa0160031bdb06cb013110be6') in 0.027247 seconds
+  Import took 0.031154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.232927 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b1ae7ada94077e22dc964ae2a33363') in 0.041892 seconds
+  Import took 0.047818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.270053 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b03e5fba5c5e3cf5e612f1717ccdc82') in 0.034421 seconds
+  Import took 0.039404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.193056 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22fdd0c76a6b3b2fdc1fb72ede347941') in 0.018047 seconds
+  Import took 0.024027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.082508 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e2021e1b3de2943a138a3941bc58b4b') in 0.032730 seconds
+  Import took 0.037933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.599216 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86058f3840140679771cfc197166190') in 0.036250 seconds
+  Import took 0.041976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.793570 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9121eb5ef2b7957a0417076094259d') in 0.018624 seconds
+  Import took 0.022694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.056326 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3663d64c4f4003f122db5e911b6da606') in 0.037886 seconds
+  Import took 0.042009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.388478 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b334fd47434a4f89604c7b6a9b2226') in 0.022241 seconds
+  Import took 0.026472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.021100 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748278e4a3c1d62547d965379e0c2361') in 0.039827 seconds
+  Import took 0.044491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.162490 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57632f547e60ba62418939505c9338ce') in 0.037015 seconds
+  Import took 0.043438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.215167 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6911184bcb4786ec23d8ec8bc14492c') in 0.034503 seconds
+  Import took 0.038842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.958126 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79087a51a19abaae5c0e7c36f8d758cf') in 0.169664 seconds
+  Import took 0.179756 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000946 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.106 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.1 MB.
+System memory in use after: 155.2 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2181.
+Total: 2.216100 ms (FindLiveObjects: 0.246400 ms CreateObjectMapping: 0.071100 ms MarkObjects: 1.863400 ms  DeleteObjects: 0.034000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.083975 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fa762d9f4257996ea879e235d09a1bd') in 0.080217 seconds
+  Import took 0.084289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.849226 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d143f82070129cadf9f79c55c892b5') in 0.025533 seconds
+  Import took 0.029377 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001296 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.119 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.1 MB.
+System memory in use after: 155.2 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2185.
+Total: 2.469800 ms (FindLiveObjects: 0.245500 ms CreateObjectMapping: 0.070200 ms MarkObjects: 2.105200 ms  DeleteObjects: 0.047700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.294742 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f23778d5104bb351d25d9be61c1cff5') in 0.116221 seconds
+  Import took 0.120411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.229902 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5799a4a426f90906dd8934a4468f3fbe') in 0.037898 seconds
+  Import took 0.042558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.044912 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b7c8dc3a6d7c305632481fb54706a9c') in 0.035137 seconds
+  Import took 0.039983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.176285 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '307a25d9a6861db4d1c33e47ccf2c2c0') in 0.036899 seconds
+  Import took 0.042272 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001100 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.085 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1640 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.1 MB.
+System memory in use after: 155.2 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2189.
+Total: 2.234800 ms (FindLiveObjects: 0.181300 ms CreateObjectMapping: 0.072300 ms MarkObjects: 1.962800 ms  DeleteObjects: 0.016900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.974212 seconds.
+  path: Assets/Player Ship.prefab
+  artifactKey: Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player Ship.prefab using Guid(ccedefdcec1292941983b05cca337359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '522f0dcd7940a3ee85dd1972bc84f8a0') in 0.105689 seconds
+  Import took 0.112716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/reticle.mat
+  artifactKey: Guid(f069a5b528a9bfd4ea3c986a59a7c25a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/reticle.mat using Guid(f069a5b528a9bfd4ea3c986a59a7c25a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf592b01424e72c37851e09819f1650a') in 0.057107 seconds
+  Import took 0.061253 seconds .
+

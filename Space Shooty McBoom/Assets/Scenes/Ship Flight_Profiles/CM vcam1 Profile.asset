@@ -18,10 +18,10 @@ MonoBehaviour:
     value: 1
   shutterAngle:
     overrideState: 1
-    value: 270
+    value: 180
   sampleCount:
     overrideState: 1
-    value: 10
+    value: 20
 --- !u!114 &-2947333553964018807
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -49,7 +49,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.06
+    value: 0.073
   smoothness:
     overrideState: 1
     value: 1
@@ -136,20 +136,20 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -34.5
   tint:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 50.9
   colorFilter:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     overrideState: 0
-    value: 0
+    value: -87
   saturation:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 11.8
   brightness:
     overrideState: 0
     value: 0
@@ -157,8 +157,8 @@ MonoBehaviour:
     overrideState: 1
     value: -2.15
   contrast:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 22.7
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
@@ -1413,10 +1413,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 3.45
+    value: 19.78
   threshold:
     overrideState: 1
-    value: 0.8
+    value: 0.73
   softKnee:
     overrideState: 0
     value: 0.5
@@ -1424,17 +1424,17 @@ MonoBehaviour:
     overrideState: 0
     value: 65472
   diffusion:
-    overrideState: 0
-    value: 7
+    overrideState: 1
+    value: 7.75
   anamorphicRatio:
     overrideState: 0
     value: 0
   color:
     overrideState: 1
-    value: {r: 0.4547979, g: 0.18396229, b: 1, a: 1}
+    value: {r: 0.9056604, g: 0.62821007, b: 0.055535804, a: 1}
   fastMode:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 1
   dirtTexture:
     overrideState: 0
     value: {fileID: 0}
