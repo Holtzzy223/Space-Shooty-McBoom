@@ -1068,7 +1068,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
@@ -1383,18 +1383,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089691044}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!96 &1482396504 stripped
-TrailRenderer:
-  m_CorrespondingSourceObject: {fileID: 7523952848162400402, guid: ccedefdcec1292941983b05cca337359,
-    type: 3}
-  m_PrefabInstance: {fileID: 6105435953366660252}
-  m_PrefabAsset: {fileID: 0}
---- !u!96 &1500890711 stripped
-TrailRenderer:
-  m_CorrespondingSourceObject: {fileID: 776833618870581909, guid: ccedefdcec1292941983b05cca337359,
-    type: 3}
-  m_PrefabInstance: {fileID: 6105435953366660252}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1691822568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,29 +1763,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 2013929832}
     m_Modifications:
     - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: maxZRange
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
       propertyPath: smoothTime
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: positionPitchFactor
-      value: 2.5
+    - target: {fileID: 776833618870581909, guid: ccedefdcec1292941983b05cca337359,
+        type: 3}
+      propertyPath: m_Time
+      value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: strafeTrails.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: strafeTrails.Array.data[0]
-      value: 
-      objectReference: {fileID: 1500890711}
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: strafeTrails.Array.data[1]
-      value: 
-      objectReference: {fileID: 1482396504}
     - target: {fileID: 6105435952746611944, guid: ccedefdcec1292941983b05cca337359,
         type: 3}
       propertyPath: m_RootOrder
@@ -1857,6 +1830,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player Ship
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523952848162400402, guid: ccedefdcec1292941983b05cca337359,
+        type: 3}
+      propertyPath: m_Time
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccedefdcec1292941983b05cca337359, type: 3}
