@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Cinemachine;
+using System;
+
 public class PlayerController : MonoBehaviour
 {
     [Header("Ship Controls")]
@@ -38,15 +40,21 @@ public class PlayerController : MonoBehaviour
     [Header("Weapons")]
     public GameObject[] lasers;
     public GameObject[] missiles;
-       // Change into slotting systems after tests... i.e laserDamage => slotOneDamage, missileDamage =>slotTwoDamage
-    [SerializeField] int laserDamage; 
+
+    // Change into slotting systems after tests... i.e laserDamage => slotOneDamage, missileDamage =>slotTwoDamage
+    [SerializeField] int laserDamage;
     [SerializeField] int missileDamage;
+    
+    public TrailRenderer[] rollTrails;
+    public TrailRenderer[] strafeTrails;
     private void Awake()
     {
+        DeactivateRollTrail();
         playerControls = new Playercontrols();
     }
     private void OnEnable()
     {
+        
         move = playerControls.Player.Move;
 
         move.Enable();
@@ -76,16 +84,19 @@ public class PlayerController : MonoBehaviour
         
         ProcessTranslation();
         ProcessRotation();
-        if (playerControls.Player.Strafe.ReadValue<float>() <= 0) { isShipStrafing = false; }
+        if (playerControls.Player.Strafe.ReadValue<float>() <= 0) { DeactivateStrafeTrail(); isShipStrafing = false; }
         if (playerControls.Player.Boost.ReadValue<float>() < 0.5f) { isShipBoosting = false; }
         if (playerControls.Player.FireMains.ReadValue<float>() < 0.5f) { ShutDownMains(); }
         if (playerControls.Player.FireSecondary.ReadValue<float>() ==0f) { ShutDownSecondary(); }
     }
 
+
+
     void ProcessRotation()
     {
         if (!isShipRolling)
         {
+            DeactivateRollTrail();
             float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
             float pitchDueToControlThrow = yThrow * controlPitchFactor;
 
@@ -98,7 +109,7 @@ public class PlayerController : MonoBehaviour
         }else
         if (isShipRolling)
         {
-
+            ActivateRollTrail();
             rollDirection = playerControls.Player.Move.ReadValue<Vector2>().x;
             rollFactor = Mathf.Lerp(rollFactor, maxRollFactor, smoothTime*Time.deltaTime);
             float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
@@ -110,7 +121,7 @@ public class PlayerController : MonoBehaviour
             float roll =  rollFactor;//rollDirection *
             Quaternion targetRotation = Quaternion.Euler(pitch, yaw, roll);
             transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, 0.1f);
-            if (rollFactor <= (maxRollFactor+1)) { rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime*Time.deltaTime); isShipRolling = false; }
+            if (rollFactor <= (maxRollFactor+1)) { rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime*Time.deltaTime); isShipRolling = false;}
         }
     }
 
@@ -139,15 +150,53 @@ public class PlayerController : MonoBehaviour
             zRange = Mathf.Lerp(zRange,maxZRange,0.1f);
         }
         transform.localPosition = Vector3.Lerp(transform.localPosition, targetTranslation, 0.8f);
-        if (!isShipBoosting) { targetTranslation = new Vector3(clampedXPos, clampedYPos,storedZPosition -storedZPosition ); transform.localPosition = Vector3.Lerp(transform.localPosition, targetTranslation, 0.2f); }
+        if (!isShipBoosting) { targetTranslation = new Vector3(clampedXPos, clampedYPos,storedZPosition -storedZPosition ); transform.localPosition = Vector3.Lerp(transform.localPosition, targetTranslation, 0.1f); }
     }
     private void DoRoll(InputAction.CallbackContext obj)
     {
         isShipRolling = true;
+        ActivateRollTrail();
     }
     private void DoStrafe(InputAction.CallbackContext obj)
     {
         isShipStrafing = true;
+        ActivateStrafeTrail();
+    }
+
+    private void ActivateStrafeTrail()
+    {
+        foreach (TrailRenderer trail in strafeTrails)
+        {
+            //trail.forceRenderingOff = false;
+            trail.emitting = true;
+        }
+    }
+
+    private void DeactivateStrafeTrail()
+    {
+        foreach (TrailRenderer trail in strafeTrails)
+        {
+            //trail.forceRenderingOff = false;
+            trail.emitting = false;
+        }
+    }
+    private void ActivateRollTrail()
+    {
+        foreach (TrailRenderer trail in rollTrails)
+        {
+            //trail.forceRenderingOff = false;
+            trail.emitting = true;
+        }
+    }
+
+    private void DeactivateRollTrail()
+    {
+        foreach (TrailRenderer trail in rollTrails)
+        {
+            //trail.forceRenderingOff = true;
+            trail.emitting = false;
+        }
+
     }
 
     private void DoBoost(InputAction.CallbackContext obj)

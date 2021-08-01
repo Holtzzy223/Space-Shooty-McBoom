@@ -324,7 +324,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 1695363188}
   m_Follow: {fileID: 2013929832}
   m_Lens:
-    FieldOfView: 50
+    FieldOfView: 40
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 8000
@@ -812,7 +812,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 8000
-  field of view: 50
+  field of view: 40
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1023,15 +1023,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1027470231 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5200077075452102079, guid: ccedefdcec1292941983b05cca337359,
+--- !u!96 &1482396504 stripped
+TrailRenderer:
+  m_CorrespondingSourceObject: {fileID: 7523952848162400402, guid: ccedefdcec1292941983b05cca337359,
     type: 3}
   m_PrefabInstance: {fileID: 6105435953366660252}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1318716761 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2440656995325247728, guid: ccedefdcec1292941983b05cca337359,
+--- !u!96 &1500890711 stripped
+TrailRenderer:
+  m_CorrespondingSourceObject: {fileID: 776833618870581909, guid: ccedefdcec1292941983b05cca337359,
     type: 3}
   m_PrefabInstance: {fileID: 6105435953366660252}
   m_PrefabAsset: {fileID: 0}
@@ -1165,51 +1165,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 2013929832}
     m_Modifications:
     - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: xRange
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: yRange
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
       propertyPath: maxZRange
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
       propertyPath: smoothTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
+      propertyPath: positionPitchFactor
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
+      propertyPath: strafeTrails.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: strafePower
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: missileDamage
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: missiles.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: missiles.Array.data[0]
+      propertyPath: strafeTrails.Array.data[0]
       value: 
-      objectReference: {fileID: 1027470231}
+      objectReference: {fileID: 1500890711}
     - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: missiles.Array.data[1]
+      propertyPath: strafeTrails.Array.data[1]
       value: 
-      objectReference: {fileID: 1318716761}
-    - target: {fileID: 210295667664102146, guid: ccedefdcec1292941983b05cca337359,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432475563982190939, guid: ccedefdcec1292941983b05cca337359,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1482396504}
     - target: {fileID: 6105435952746611944, guid: ccedefdcec1292941983b05cca337359,
         type: 3}
       propertyPath: m_RootOrder
