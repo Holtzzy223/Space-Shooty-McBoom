@@ -50,10 +50,10 @@ public class AsteroidGenerator : MonoBehaviour
      //       spawnPoint.Normalize();
      //   }
         if (spawnPoint == player.transform.position) { PickSpawnPoint(); return;}
-        for (int i = 0; i < track.m_Waypoints.Length; i++)
-        {
-            if (spawnPoint == track.m_Waypoints[i].position) { PickSpawnPoint();return;}
-        }
+        //for (int i = 0; i < track.m_Waypoints.Length; i++)
+        //{         
+        //    if (spawnPoint == track.m_Waypoints[i].position) { PickSpawnPoint();return;}
+        //}
         spawnPoint *= spawnRange;
         
     }
