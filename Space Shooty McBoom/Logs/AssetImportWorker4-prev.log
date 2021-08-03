@@ -3554,3 +3554,300 @@ Received Import Request.
 Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998531c6c641e44016c57176c75850ba') in 0.065562 seconds
   Import took 0.069025 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001000 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.315 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1646 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.5 MB.
+System memory in use after: 171.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2467.
+Total: 2.570400 ms (FindLiveObjects: 0.241400 ms CreateObjectMapping: 0.072400 ms MarkObjects: 2.206500 ms  DeleteObjects: 0.048400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 566.131961 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83a0b7a317fe957820f4586e2c7cec4') in 0.127190 seconds
+  Import took 0.132213 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000954 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.377 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1646 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.5 MB.
+System memory in use after: 171.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2471.
+Total: 2.331200 ms (FindLiveObjects: 0.265900 ms CreateObjectMapping: 0.077000 ms MarkObjects: 1.960900 ms  DeleteObjects: 0.025300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 807.745313 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3eb400d91e7751861b15ef2c67610e') in 0.091606 seconds
+  Import took 0.096275 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004537 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.389 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1646 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.5 MB.
+System memory in use after: 171.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2475.
+Total: 5.510500 ms (FindLiveObjects: 0.427800 ms CreateObjectMapping: 0.092600 ms MarkObjects: 4.744300 ms  DeleteObjects: 0.244000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.262628 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1db988495dea1b9a4ac1ba2ff6a6804') in 0.078983 seconds
+  Import took 0.083118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 271.287957 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bac9109c31ce86e890e7e68013e0c26') in 0.026280 seconds
+  Import took 0.034334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.533254 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359a581c6373c1800dec689ea53fbc2e') in 0.018307 seconds
+  Import took 0.023282 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001059 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.411 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1646 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.5 MB.
+System memory in use after: 171.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2479.
+Total: 12.108100 ms (FindLiveObjects: 7.700500 ms CreateObjectMapping: 0.658700 ms MarkObjects: 3.713300 ms  DeleteObjects: 0.033600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.448502 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517e7cbcd54ef5ff799ae107a273ef6d') in 0.085353 seconds
+  Import took 0.089709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 281.111239 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1491b0a20dabdccdb022ab6789420a0') in 0.021465 seconds
+  Import took 0.026593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.520128 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00fa6469ff1bc494c37fb7a8c17b6d5') in 0.015420 seconds
+  Import took 0.019569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.311657 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86712a2d966d2aeaaf5de4ce51d66aee') in 0.026070 seconds
+  Import took 0.030208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.227786 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83d57196306bcd06f2a26de7e5df3ed') in 0.016482 seconds
+  Import took 0.021123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.549159 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dda5467cc2343e6b893d5d3c3aafd7c') in 0.105527 seconds
+  Import took 0.109628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010952 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dda5467cc2343e6b893d5d3c3aafd7c') in 0.017678 seconds
+  Import took 0.021850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.783925 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '776a27311826bc467951117beeddc92c') in 0.023525 seconds
+  Import took 0.027410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.271536 seconds.
+  path: Assets/Materials/LaserGlow 1.mat
+  artifactKey: Guid(9a5439e290f088545947a4abd16ccfe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/LaserGlow 1.mat using Guid(9a5439e290f088545947a4abd16ccfe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe4f3d87252215b4b510a4d837c69d3') in 0.044990 seconds
+  Import took 0.049320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 156.364845 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f6203d117aafec6671efa5b06d97f6b') in 0.013764 seconds
+  Import took 0.018110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.227411 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7d7cdd6d8f28a3a4568c084bf616f4') in 0.018017 seconds
+  Import took 0.022570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.358178 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2621ef029ff128f2a5db8179ea3923b') in 0.017479 seconds
+  Import took 0.021754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.184324 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2640a4233019bd46bc5f25eadb8ed061') in 0.019147 seconds
+  Import took 0.024855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.205666 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5e0970085ed7005a5b4fc87a383390d') in 0.016571 seconds
+  Import took 0.021433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.484508 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace1bb2069eac0b4358e18c21dc2c763') in 0.019608 seconds
+  Import took 0.025365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.112425 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b8114657e55795844142e712ddb694') in 0.019127 seconds
+  Import took 0.024264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.382679 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0939c53840c117e2879cb5a9268f65e') in 0.016587 seconds
+  Import took 0.021149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.869154 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79dc479e566cf655b137c76e9342ddc5') in 0.012581 seconds
+  Import took 0.017621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.204871 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca844b081da6c2f5e24a48f080d30c4e') in 0.017732 seconds
+  Import took 0.023082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.846410 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b2045617733896238931e3fa90ee77') in 0.025554 seconds
+  Import took 0.029549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.032248 seconds.
+  path: Assets/Prefabs/Tower.prefab
+  artifactKey: Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower.prefab using Guid(2ddcbd200ad7df14dad7eaf73921e94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceb4d9714d4e38d02eded5be0135a5f1') in 0.015322 seconds
+  Import took 0.019502 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
