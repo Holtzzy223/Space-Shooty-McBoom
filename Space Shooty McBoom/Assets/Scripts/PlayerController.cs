@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour
             float roll =  rollFactor;//rollDirection *
             Quaternion targetRotation = Quaternion.Euler(pitch, yaw, roll);
             transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, 0.1f);
-            if (rollFactor <= (maxRollFactor+1)) { rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime*Time.deltaTime); isShipRolling = false;}
+            if (rollFactor >= (maxRollFactor-1)) { rollFactor = Mathf.Lerp(0, minRollFactor, smoothTime*Time.deltaTime); isShipRolling = false;}
         }
     }
 
