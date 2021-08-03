@@ -3468,7 +3468,7 @@ GameObject:
   - component: {fileID: 890442766}
   m_Layer: 0
   m_Name: Enemy Cart
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4556,10 +4556,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66a0598f7abd34e84aa90f7426edcc21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minVelocity: 5
-  maxVelocity: 20
-  randomness: 30
-  flockSize: 20
+  minVelocity: 30
+  maxVelocity: 150
+  randomness: 160
+  flockSize: 200
   prefab: {fileID: 11400002, guid: d8b44d7d2c649494f94fc21c3d373a80, type: 3}
   target: {fileID: 1331013174}
 --- !u!135 &1331013176
@@ -6837,24 +6837,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2013929832}
     m_Modifications:
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: xRange
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962483673, guid: ccedefdcec1292941983b05cca337359, type: 3}
-      propertyPath: yRange
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 695717783285056154, guid: ccedefdcec1292941983b05cca337359,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319082063433402604, guid: ccedefdcec1292941983b05cca337359,
-        type: 3}
-      propertyPath: m_Autodestruct
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6105435952746611944, guid: ccedefdcec1292941983b05cca337359,
         type: 3}
       propertyPath: m_RootOrder
@@ -6914,11 +6896,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player Ship
-      objectReference: {fileID: 0}
-    - target: {fileID: 6105435952746611951, guid: ccedefdcec1292941983b05cca337359,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccedefdcec1292941983b05cca337359, type: 3}

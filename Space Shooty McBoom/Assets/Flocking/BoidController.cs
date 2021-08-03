@@ -40,8 +40,11 @@ public class BoidController : MonoBehaviour
 		Vector3 velocity = Vector3.zero;
 		foreach (BoidFlocking boid in boids)
 		{
-			center += boid.transform.localPosition;
-			velocity += boid.GetComponent<Rigidbody>().velocity;
+			if (boid != null)
+			{
+				center += boid.transform.localPosition;
+				velocity += boid.GetComponent<Rigidbody>().velocity;
+			}
 		}
 		flockCenter = center / flockSize;
 		flockVelocity = velocity / flockSize;
