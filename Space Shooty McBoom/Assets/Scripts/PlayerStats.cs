@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerStats : MonoBehaviour
 {
     public float health = 100;
@@ -18,18 +18,23 @@ public class PlayerStats : MonoBehaviour
     {
         if (health < 1)
         {
-            Destroy(this);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
     private void OnParticleCollision(GameObject other)
     {
         Debug.Log($"{name}I'm hit! by {other.gameObject.name}");
-        health -= 10f;
+        if (!other.gameObject.CompareTag("Player"))
+        {
+            health -= 10f;
+        }
+        
+        
        
     }
     private void OnCollisionEnter(Collision other)
     {
-        health -= 5f;
+        health -= 10f;
         
     }
 

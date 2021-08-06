@@ -20,7 +20,7 @@ public class AsteroidGenerator : MonoBehaviour
             PickSpawnPoint();
 
             //pick new spawn point if too close to player start
-            while (Vector3.Distance(spawnPoint, Vector3.zero) < startSafeRange)
+            while (Vector3.Distance(spawnPoint, transform.position) < startSafeRange)
             {
                 PickSpawnPoint();
             }

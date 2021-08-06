@@ -2,19 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AsteroidBehavior : MonoBehaviour
+public class Star : MonoBehaviour
 {
-    public float rotationSpeed = 90f;
+    public float stuff = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        stuff = 10;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 0, rotationSpeed, Space.Self);
-        transform.Rotate(rotationSpeed, 0, rotationSpeed, Space.World);
+        
     }
 }
